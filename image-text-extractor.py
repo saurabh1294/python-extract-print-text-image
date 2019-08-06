@@ -11,5 +11,5 @@ for y in range(img.size[1]):
 else :
 	pix[x, y] = (255, 255, 255, 255)
 img.save('temp.png')
-text = pytesseract.image_to_string(Image.open('temp.jpeg'))# os.remove('temp.jpg')
+text = pytesseract.image_to_string(Image.open(path))# os.remove('temp.jpg')
 print(text)# print image_to_string(Image.open('find.jpg'))
